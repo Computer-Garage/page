@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Garage</title>
+    <link rel="logo.png" href="./logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Computer Garage</h1>
+        </div>
+    </header>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UClSnmzVCqTpbgGFY-dAdlsg"><i class="fa fa-youtube-play icon">
+                    Youtube</i></a></li>
+        <li><a href="https://www.instagram.com/computergarage__/"><i class="fa fa-instagram icon"> Instagram</i></a>
+        </li>
+        <li><a href="https://github.com/computer-garage"><i class="fa fa-github icon"> Github</i></a></li>
+    </ul>
+</body>
+
+<style>
+    body {
+        user-select: none;
+        background: darkslategrey;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        overflow: hidden;
+        text-align: center;
+        background: darkred;
+    }
+
+    ul li {
+        list-style: none;
+        margin: 2%;
+        padding-right: 5%;
+    }
+
+    ul li a {
+        text-align: center;
+        line-height: 80px;
+        font-size: 45px;
+        display: block;
+        border: 3px solid black;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    ul li a .icon {
+        position: relative;
+        color: white;
+        transition: .5s;
+    }
+
+    ul li:nth-child(1) a:hover .icon {
+        color: red;
+        transform: rotateY(360deg);
+    }
+
+    ul li:nth-child(2) a:hover .icon {
+        color: rgb(255, 6, 222);
+        /* background: linear-gradient(#f702ff, #ffa805);
+        border-radius: 50px; */
+        transform: rotateY(360deg);
+    }
+
+    ul li:nth-child(3) a:hover .icon {
+        color: black;
+        transform: rotateY(360deg);
+    }
+
+    ul li a:before {
+        position: absolute;
+        background: #f00;
+        transition: .5s;
+    }
+</style>
+
+</html>
