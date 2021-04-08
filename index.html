@@ -15,10 +15,10 @@
             <h1>Computer Garage</h1>
         </div>
     </header>
-    <ul>
-        <li><a href="https://www.youtube.com/channel/UClSnmzVCqTpbgGFY-dAdlsg"><i class="fa fa-youtube-play icon"> Youtube</i></a></li>
-        <li><a href="https://www.instagram.com/computergarage__/"><i class="fa fa-instagram icon"> Instagram</i></a></li>
-        <li><a href="https://github.com/computer-garage"><i class="fa fa-github icon"> Github</i></a></li>
+    <ul style="padding: 0;">
+        <li><a href="https://www.youtube.com/channel/UClSnmzVCqTpbgGFY-dAdlsg"><i class="fa fa-youtube-play icon"><br>Youtube</i></a></li>
+        <li><a href="https://www.instagram.com/computergarage__/"><i class="fa fa-instagram icon"><br>Instagram</i></a></li>
+        <li><a href="https://github.com/computer-garage"><i class="fa fa-github icon"><br>Github</i></a></li>
     </ul>
 </body>
 
@@ -27,7 +27,6 @@
         user-select: none;
         background: royalblue;
         margin: 0;
-        padding: 0;
     }
 
     .container {
@@ -37,49 +36,50 @@
         color: white;
     }
 
+    .container h1 {
+        text-shadow: 5px 5px black;
+    }
+
     ul li {
         list-style: none;
-        margin: 2%;
-        padding-right: 5%;
+        margin: 5%;
     }
 
     ul li a {
         text-align: center;
-        line-height: 80px;
-        font-size: 45px;
+        padding: 1%;
+        font-size: 40px;
         display: block;
-        border: 3px solid white;
-        border-radius: 50px;
-        position: relative;
-        overflow: hidden;
     }
 
     ul li a .icon {
         position: relative;
         color: white;
-        transition: .5s;
+        transition: 1s;
+        border-radius: 20px;
+        width: 100%;
+        padding: 1% 0;
+        box-shadow: 5px 8px 8px 5px #111;
     }
 
     ul li:nth-child(1) a:hover .icon {
-        color: red;
-        transform: rotateY(360deg);
+        background: red;
+        transform: rotateX(360deg);
     }
 
     ul li:nth-child(2) a:hover .icon {
         background: linear-gradient(200deg, #f702ff, #ffa805);
-        border-radius: 50px;
-        transform: rotateY(360deg);
+        transform: rotateX(360deg);
     }
 
     ul li:nth-child(3) a:hover .icon {
-        color: black;
-        transform: rotateY(360deg);
+        background: black;
+        transform: rotateX(360deg);
     }
 
     ul li a:before {
         position: absolute;
         background: #f00;
-        transition: .5s;
     }
 </style>
 
